@@ -1,0 +1,259 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+:root {
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+}
+
+* { box-sizing: border-box; }
+
+.app {
+  min-height: 100dvh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+.topbar {
+  border-bottom: 1px solid #e5e7eb;
+  background: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.nav {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0.75rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav__brand {
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.nav__links a {
+  margin-left: 1rem;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 960px;
+  padding: 1rem;
+  margin: 0 auto;
+}
+
+.stack > * + * { margin-top: 1rem; }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 1rem;
+}
+
+/* responsive: 1 column on mobile, 2–3 on larger screens */
+.card {
+  grid-column: span 12;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  background: #fff;
+}
+
+@media (min-width: 640px) {
+  .card { grid-column: span 6; }
+}
+
+@media (min-width: 1024px) {
+  .card { grid-column: span 4; }
+}
+
+.footer {
+  border-top: 1px solid #e5e7eb;
+  padding: 0.75rem 1rem;
+  text-align: center;
+  background: #fafafa;
+}
+
+/* Counter */
+.counter {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.counter__display {
+  min-width: 3ch;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 0.25rem 0.5rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.375rem;
+}
+
+.counter__actions button {
+  padding: 0.5rem 0.75rem;
+}
+
+/* Form */
+.form {
+  display: grid;
+  gap: 0.75rem;
+}
+.form label {
+  display: grid;
+  gap: 0.375rem;
+}
+.form input {
+  padding: 0.5rem 0.6rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.375rem;
+}
+.form button {
+  width: fit-content;
+  padding: 0.6rem 1rem;
+}
+.error {
+  color: #b91c1c;
+  font-size: 0.875rem;
+}
+
+.card {
+  padding: 20px;
+  border-radius: 20px;
+  margin: 10px;
+  color: white;
+}
+
+.card.task1 {
+  /* background-color: #a2a2ff; */
+  background-color: #adade2; 
+}
+
+.card.task2 {
+  background-color: #2ecc71; /* hijau */
+}
+
+.card.task3 {
+  background-color: #e67e22; /* oranye */
+}
+
+.counter__display {
+  margin-bottom: 10px;
+}
+
+.counter__actions button {
+  margin-right: 10px;
+}
+
+.counter__actions button:last-child {
+  margin-right: 10px; /* remove margin from last button */
+}
+
+.form label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 4px; /* small space before error */
+}
+
+.form label span {
+  width: 50px;       /* fixed width for label text */
+}
+
+.form label input {
+  flex: 1;
+  padding: 6px 10px;
+  margin-left: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+
+.form-row {
+  display: flex;
+  align-items: left;
+  margin-bottom: 0px;
+}
+
+.form-row label {
+  width: 80px;      
+  font-weight: 500;
+  align-items: left;
+}
+
+.form-row input {
+  flex: 1;
+  padding: 6px 3px;
+  border: 1px solid #3770b0;
+  border-radius: 4px;
+}
+
+.error {
+  color: rgb(255, 23, 23);
+  font-size: 0.8rem;
+  margin-top: 0px;
+  margin-left: 100px;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+.btn-active {
+  background-color: #8d60ed; /* green */
+}
+
+.btn-disabled {
+  background-color: #ccc; /* gray */
+  cursor: not-allowed;
+}
+
